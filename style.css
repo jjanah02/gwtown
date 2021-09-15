@@ -228,8 +228,7 @@ h1 {
 }
 
 @media only screen and (max-width: 1180px) {
-
-  /*Motto section in mobile view */
+  /* Motto section in tablet view */
   .motto {
     height: 315px;
   }
@@ -259,7 +258,7 @@ h1 {
     padding: 0% 5% 0.5% 5%;
   }
 
-  /* Main description section in mobile view */
+  /* Main description section in tablet view */
   .segment {
     height: 800px;
     background-image: linear-gradient(#e8ffff, #79a3b1);
@@ -370,5 +369,110 @@ h1 {
     width: 450px;
     height: 350px;
     margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .motto {
+    height: 100%;
+  }
+
+  .mottoFlexbox {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding: 2.5%;
+    align-items: center;
+    color: #999b84;
+  }
+
+  .mottoText {
+    width: 100%;
+    padding: 0;
+  }
+
+  /* Main description section in mobile view */
+  .segment {
+    height: 700px;
+    background-image: linear-gradient(#e8ffff, #79a3b1);
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 2.5%;
+  }
+
+  .first {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .leftImage #imgs {
+    height: 250px;
+    width: 340px;
+    border-radius: 8px;
+  }
+
+  .imageOne {
+    width: 95%;
+    height: 100%;
+    z-index: 0;
+  }
+
+  .descriptionText {
+    font-size: 16px;
+  }
+
+  .textOne {
+    width: 350px;
+    height: 335px;
+    background-color: #41aea9;
+    color: white;
+    font-size: 10px;
+    margin: 0;
+    margin-top: -20%;
+    z-index: 1;
+  }
+
+  .second {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .rightImage {
+    margin: 0;
+    z-index: 0;
+  }
+
+  .rightImage #imgs {
+    height: 250px;
+    width: 340px;
+    border-radius: 8px;
+  }
+
+  .imageTwo {
+    width: 400px;
+    height: 300px;
+  }
+
+  .textTwo {
+    width: 350px;
+    height: 335px;
+    background-color: #41aea9;
+    color: white;
+    font-size: 12px;
+    margin: 0;
+    z-index: 1;
+    margin-top: -20%;
+  }
+
+  .contactContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: -5%;
+    width: 80%;
+    height: 100%;
   }
 }
