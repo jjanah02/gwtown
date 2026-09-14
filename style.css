@@ -4,6 +4,12 @@ body {
   border: 0;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 .heading {
   background-color: #79a3b1;
   text-align: center;
@@ -77,10 +83,6 @@ body {
   height: 400px;
 }
 
-h1 {
-  font-size: 75px;
-  line-height: 2.5;
-}
 
 /* *************location ******************* */
 .locationContainer {
@@ -159,11 +161,12 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-bottom: 10%;
 }
 
-.leftImage #imgs {
-  height: 350px;
+.leftImage img {
   width: 500px;
+  height: 350px;
   border-radius: 8px;
 }
 
@@ -196,9 +199,9 @@ h1 {
 }
 
 /* ************** Second image and description overlap on main page **************  */
-.rightImage #imgs {
-  height: 350px;
+.rightImage img {
   width: 500px;
+  height: 350px;
   border-radius: 8px;
 }
 
@@ -228,7 +231,8 @@ h1 {
 }
 
 @media only screen and (max-width: 1180px) {
-  /* Motto section in tablet view */
+
+  /*Motto section in mobile view */
   .motto {
     height: 315px;
   }
@@ -258,9 +262,9 @@ h1 {
     padding: 0% 5% 0.5% 5%;
   }
 
-  /* Main description section in tablet view */
+  /* Main description section in mobile view */
   .segment {
-    height: 800px;
+    height: auto;
     background-image: linear-gradient(#e8ffff, #79a3b1);
     width: 100%;
     padding-top: 15%;
@@ -274,10 +278,25 @@ h1 {
     align-items: center;
   }
 
-  .imageOne {
-    width: 400px;
-    height: 300px;
+  .leftImage,
+  .rightImage {
+    height: auto;
+    width: 100%;
+  }
+
+  .imageOne,
+  .imageTwo {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
     z-index: 0;
+  }
+
+  .leftImage img,
+  .rightImage img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
   }
 
   .descriptionText {
@@ -285,12 +304,26 @@ h1 {
   }
 
   .textOne {
-    width: 400px;
-    height: 350px;
+    width: 85%;
+    max-width: 400px;
+    height: auto;
     background-color: #41aea9;
     color: white;
-    font-size: 10px;
-    padding: 25px 20px 0 20px;
+    font-size: 1rem;
+    padding: 25px 20px 20px 20px;
+    margin: auto;
+    margin-top: -10%;
+    z-index: 1;
+  }
+
+  .textTwo {
+    width: 90%;
+    max-width: 450px;
+    height: auto;
+    background-color: #41aea9;
+    color: white;
+    font-size: 1rem;
+    padding: 25px 20px 20px 20px;
     margin: auto;
     margin-top: -10%;
     z-index: 1;
@@ -304,23 +337,6 @@ h1 {
   .rightImage {
     margin: auto;
     z-index: 0;
-  }
-
-  .imageTwo {
-    width: 400px;
-    height: 300px;
-  }
-
-  .textTwo {
-    width: 400px;
-    height: 300px;
-    background-color: #41aea9;
-    color: white;
-    font-size: 12px;
-    padding: 25px 20px 0 20px;
-    margin: auto;
-    z-index: 1;
-    margin-top: -10%;
   }
 
   /* *******************Location************************** */
@@ -368,154 +384,6 @@ h1 {
     display: block;
     width: 450px;
     height: 350px;
-    margin: 0 auto;
-  }
-}
-
-@media only screen and (max-width: 640px) {
-  .motto {
-    height: 100%;
-  }
-
-  .mottoFlexbox {
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-    padding: 2.5%;
-    align-items: center;
-    color: #999b84;
-  }
-
-  .mottoText {
-    width: 100%;
-    padding: 0;
-  }
-
-  /* Main description section in mobile view */
-  .segment {
-    height: 700px;
-    background-image: linear-gradient(#e8ffff, #79a3b1);
-    width: 100%;
-    padding-top: 5%;
-    padding-bottom: 2.5%;
-  }
-
-  .first {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .leftImage #imgs {
-    height: 250px;
-    width: 340px;
-    border-radius: 8px;
-  }
-
-  .imageOne {
-    width: 95%;
-    height: 100%;
-    z-index: 0;
-  }
-
-  .descriptionText {
-    font-size: 16px;
-  }
-
-  .textOne {
-    width: 350px;
-    height: 335px;
-    background-color: #41aea9;
-    color: white;
-    font-size: 10px;
-    margin: 0;
-    margin-top: -20%;
-    z-index: 1;
-  }
-
-  .second {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .rightImage {
-    margin: 0;
-    z-index: 0;
-  }
-
-  .rightImage #imgs {
-    height: 250px;
-    width: 340px;
-    border-radius: 8px;
-  }
-
-  .imageTwo {
-    width: 400px;
-    height: 300px;
-  }
-
-  .textTwo {
-    width: 350px;
-    height: 335px;
-    background-color: #41aea9;
-    color: white;
-    font-size: 12px;
-    margin: 0;
-    z-index: 1;
-    margin-top: -20%;
-  }
-
-  /* ********************** location mobile view********************* */
-  .locationContainer {
-    display: flex;
-    width: 100%;
-  }
-
-  .googleMap {
-    border-radius: 8px;
-    max-width: 100%;
-    padding: 1.5%;
-  }
-
-  .details {
-    font-size: 20px;
-    padding: 0 4% 2% 4%;
-    margin-top: -55px;
-    width: 100%;
-  }
-
-  .details h4 {
-    font-size: 28px;
-    padding-bottom: 5%;
-  }
-
-  /* ********************** Contact mobile*********************** */
-  .contactContainer {
-    display: flex;
-    flex-direction: column;
-    margin-top: 2%;
-    width: 100%;
-    height: 100%;
-    padding: 0 4% 4% 4%;
-  }
-
-  .contactText h4 {
-    font-size: 22px;
-    padding-bottom: 5%;
-  }
-
-  .contactText {
-    font-size: 18px;
-    padding: 0 5% 5% 5%;
-  }
-
-  .contactImage {
-    display: block;
-    width: 350px;
-    height: 250px;
     margin: 0 auto;
   }
 }
