@@ -4,6 +4,10 @@ body {
   border: 0;
 }
 
+.contactPage {
+  padding-bottom: 40px;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -345,20 +349,23 @@ img {
     flex-direction: column;
     margin: 0 auto;
     padding-top: 2%;
-    height: 800px;
+    height: auto;
+    padding-bottom: 40px;
   }
 
   .details {
-    width: 400px;
-    margin: 5px;
+    width: 100%;
+    max-width: 400px;
+    margin: 5px auto;
     padding: 0;
   }
 
   .googleMap {
     margin-top: 10px;
-    display: center;
-    height: 300px;
-    width: 400px;
+    display: block;
+    height: auto;
+    width: 100%;
+    max-width: 400px;
   }
 
   /* ********************** Contact *********************** */
@@ -366,8 +373,9 @@ img {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    padding-top: 12%;
-    width: 80%;
+    padding-top: 5%;
+    width: 90%;
+    padding-bottom: 40px;
   }
 
   .contactText h4 {
@@ -382,8 +390,9 @@ img {
 
   .contactImage {
     display: block;
-    width: 450px;
-    height: 350px;
+    width: 100%;
+    max-width: 450px;
+    height: auto;
     margin: 0 auto;
   }
 }
