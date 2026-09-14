@@ -348,51 +348,62 @@ img {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    padding-top: 2%;
+    padding-top: 1rem;
     height: auto;
     padding-bottom: 40px;
   }
 
+  .locationPage .details,
   .details {
     width: 100%;
-    max-width: 400px;
-    margin: 5px auto;
+    max-width: 460px;
+    margin: 0 auto 1.25rem;
     padding: 0;
+    font-size: 1.1rem;
+    line-height: 1.8;
   }
 
-  .googleMap {
+  .locationPage .details h4 {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+  }
+
+  .locationPage .googleMap {
     margin-top: 10px;
     display: block;
     height: auto;
     width: 100%;
-    max-width: 400px;
+    max-width: 460px;
+    border-radius: 12px;
   }
 
   /* ********************** Contact *********************** */
-  .contactContainer {
+  .contactPage .contactContainer {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    padding-top: 5%;
-    width: 90%;
+    padding-top: 8%;
+    width: min(92%, 560px);
     padding-bottom: 40px;
   }
 
-  .contactText h4 {
-    font-size: 22px;
+  .contactPage .contactText h4 {
+    font-size: 1.8rem;
     padding-bottom: 5%;
   }
 
-  .contactText {
-    font-size: 18px;
-    padding: 0 10px 50px 5px;
+  .contactPage .contactText {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    padding: 0 0 1.5rem;
   }
 
-  .contactImage {
+  .contactPage .contactImage {
     display: block;
     width: 100%;
-    max-width: 450px;
+    max-width: 500px;
     height: auto;
     margin: 0 auto;
+    border-radius: 12px;
   }
 }
